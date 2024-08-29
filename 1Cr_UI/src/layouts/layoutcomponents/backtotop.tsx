@@ -1,0 +1,40 @@
+import  { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
+
+const BacktoTop = () => {
+  const [BacktoTop, setBacktopTop] = useState("");
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        setBacktopTop("d-block");
+      } else setBacktopTop("");
+    });
+  }, []);
+
+  const screenup = () => {
+    window.scrollTo({
+      top: 10,
+      behavior: "auto",
+    });
+  };
+  return (
+    <div>
+      <Link to="#" id="back-to-top" onClick={screenup} className={`${BacktoTop}`} ><i className="fa fa-angle-up"></i></Link>
+    </div>
+  );
+};
+
+BacktoTop.propTypes = {};
+
+BacktoTop.defaultProps = {};
+
+export default BacktoTop;
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "page_name": "TimeLine",
+    "is_show": false,
+    "role_id": "1"
+  },
+  {
+    "id": "2",
+    "page_name": "AutomationRequestHistory",
+    "is_show": true,
+    "role_id": "1"
+  },
+  {
+    "id": "3",
+    "page_name": "AutomationRequestTab",
+    "is_show": true,
+    "role_id": "1"
+  },
+  {
+    "id": "4",
+    "page_name": "AutomationRequest",
+    "is_show": false,
+    "role_id": "1"
+  },
+  {
+    "id": "5",
+    "page_name": "Dashboard",
+    "is_show": false,
+    "role_id": "1"
+  },
+  {
+    "id": "6",
+    "page_name": "Backlog",
+    "is_show": false,
+    "role_id": "1"
+  },
+  {
+    "id": "7",
+    "page_name": "Insights",
+    "is_show": true,
+    "role_id": "1"
+  },
+  {
+    "id": "8",
+    "page_name": "Releases",
+    "is_show": true,
+    "role_id": "1"
+  },
+  {
+    "id": "9",
+    "page_name": "Trend",
+    "is_show": true,
+    "role_id": "1"
+  },
+  {
+    "id": "10",
+    "page_name": "CostBenefits",
+    "is_show": true,
+    "role_id": "1"
+  },
+  {
+    "id": "11",
+    "page_name": "UserManagement",
+    "is_show": false,
+    "role_id": "1"
+  },
+  {
+    "id": "12",
+    "page_name": "RoleManagement",
+    "is_show": false,
+    "role_id": "1"
+  }
+]
