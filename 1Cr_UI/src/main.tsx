@@ -71,6 +71,14 @@ root.render(
                 path={`${import.meta.env.BASE_URL}dashboard`}
                 element={<Dashboard />}
               />
+              <Route
+                path={`${import.meta.env.BASE_URL}testimonials`}
+                element={<Dashboard />}
+              />
+              <Route
+                path={`${import.meta.env.BASE_URL}master/blog`}
+                element={<Dashboard />}
+              />
              
              
             

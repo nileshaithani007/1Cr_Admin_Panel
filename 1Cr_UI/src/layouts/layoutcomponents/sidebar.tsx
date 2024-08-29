@@ -194,125 +194,125 @@ export const Sidebar = () => {
   // }
   const [submenuItems] = useState([
     {
-        "SubDisplayName": "Dashboard",
+        "SubDisplayName": "Testimonials",
         "subTabs": [
             {
                 "type": "link",
                 "Icon": "fe fe-cpu",
-                "pagename": "Dashboard",
-                "PageRoute": "/dashboard",
+                "pagename": "Testimonials",
+                "PageRoute": "/testimonials",
                 "selected": false
             }
         ]
     },
     {
-        "SubDisplayName": "Process Repository",
-        "subTabs": [
-            {
-                "type": "link",
-                "Icon": "fe fe-cpu",
-                "pagename": "Process Repository",
-                "PageRoute": "/process/repository",
-                "selected": false
-            }
-        ]
-    },
-    {
-      "SubDisplayName": "Automation Tracker",
+      "SubDisplayName": "Blogs",
       "subTabs": [
           {
               "type": "link",
               "Icon": "fe fe-cpu",
-              "pagename": "Automation Tracker",
-              "PageRoute": "/automation/tracker",
+              "pagename": "Blogs",
+              "PageRoute": "/master/blog",
               "selected": false
           }
       ]
   },
-    {
-        "SubDisplayName": "Tracking Master",
-        "subTabs": [
-            {
-                "type": "link",
-                "Icon": "fe fe-cpu",
-                "pagename": "Tracking Master",
-                "PageRoute": "master/tracking",
-                "selected": false
-            }
-        ]
-    },
-  //   {
-  //     "SubDisplayName": "Wave Master",
-  //     "subTabs": [
-  //         {
-  //             "type": "link",
-  //             "Icon": "fe fe-cpu",
-  //             "pagename": "Wave Master",
-  //             "PageRoute": "master/wave",
-  //             "selected": false
-  //         }
-  //     ]
-  // },
-  {
-    "SubDisplayName": "Applications",
-    "subTabs": [
-        {
-            "type": "link",
-            "Icon": "fe fe-cpu",
-            "pagename": "Application Master",
-            "PageRoute": "master/application",
-            "selected": false
-        }
-    ]
-},
-{
-  "SubDisplayName": "Functions",
-  "subTabs": [
-      {
-          "type": "link",
-          "Icon": "fe fe-cpu",
-          "pagename": "Function Master",
-          "PageRoute": "master/function",
-          "selected": false
-      }
-  ]
-},
-{
-  "SubDisplayName": "Stages",
-  "subTabs": [
-      {
-          "type": "link",
-          "Icon": "fe fe-cpu",
-          "pagename": "Stage",
-          "PageRoute": "master/stage",
-          "selected": false
-      }
-  ]
-},
-{
-  "SubDisplayName": "Technologies",
-  "subTabs": [
-      {
-          "type": "link",
-          "Icon": "fe fe-cpu",
-          "pagename": "Technology",
-          "PageRoute": "master/technology",
-          "selected": false
-      }
-  ]
-},
-{
-  "SubDisplayName": "Transformation Levers",
-  "subTabs": [
-      {
-          "type": "link",
-          "Icon": "fe fe-cpu",
-          "pagename": "Transformation Levers",
-          "PageRoute": "master/transformation/levers",
-          "selected": false
-      }
-  ]
-},
+//     {
+//         "SubDisplayName": "Process Repository",
+//         "subTabs": [
+//             {
+//                 "type": "link",
+//                 "Icon": "fe fe-cpu",
+//                 "pagename": "Process Repository",
+//                 "PageRoute": "/process/repository",
+//                 "selected": false
+//             }
+//         ]
+//     },
+//     {
+//       "SubDisplayName": "Automation Tracker",
+//       "subTabs": [
+//           {
+//               "type": "link",
+//               "Icon": "fe fe-cpu",
+//               "pagename": "Automation Tracker",
+//               "PageRoute": "/automation/tracker",
+//               "selected": false
+//           }
+//       ]
+//   },
+//     {
+//         "SubDisplayName": "Tracking Master",
+//         "subTabs": [
+//             {
+//                 "type": "link",
+//                 "Icon": "fe fe-cpu",
+//                 "pagename": "Tracking Master",
+//                 "PageRoute": "master/tracking",
+//                 "selected": false
+//             }
+//         ]
+//     },
+//   {
+//     "SubDisplayName": "Applications",
+//     "subTabs": [
+//         {
+//             "type": "link",
+//             "Icon": "fe fe-cpu",
+//             "pagename": "Application Master",
+//             "PageRoute": "master/application",
+//             "selected": false
+//         }
+//     ]
+// },
+// {
+//   "SubDisplayName": "Functions",
+//   "subTabs": [
+//       {
+//           "type": "link",
+//           "Icon": "fe fe-cpu",
+//           "pagename": "Function Master",
+//           "PageRoute": "master/function",
+//           "selected": false
+//       }
+//   ]
+// },
+// {
+//   "SubDisplayName": "Stages",
+//   "subTabs": [
+//       {
+//           "type": "link",
+//           "Icon": "fe fe-cpu",
+//           "pagename": "Stage",
+//           "PageRoute": "master/stage",
+//           "selected": false
+//       }
+//   ]
+// },
+// {
+//   "SubDisplayName": "Technologies",
+//   "subTabs": [
+//       {
+//           "type": "link",
+//           "Icon": "fe fe-cpu",
+//           "pagename": "Technology",
+//           "PageRoute": "master/technology",
+//           "selected": false
+//       }
+//   ]
+// },
+// {
+//   "SubDisplayName": "Transformation Levers",
+//   "subTabs": [
+//       {
+//           "type": "link",
+//           "Icon": "fe fe-cpu",
+//           "pagename": "Transformation Levers",
+//           "PageRoute": "master/transformation/levers",
+//           "selected": false
+//       }
+//   ]
+// },
     // {
     //     "SubDisplayName": "Automation Maintainence",
     //     "subTabs": [
@@ -474,11 +474,12 @@ export const Sidebar = () => {
         onMouseOut={() => Outhover()}>
         <PerfectScrollbar options={{ suppressScrollX: true, useBothWheelAxes: false }}>
           <div className="side-header">
-            <Link className="header-brand1" to={`${import.meta.env.BASE_URL}home`}>
-              <img src={Imagesdata("msl_top_logo")} className="header-brand-img desktop-logo" alt="logo1" />
+            <Link className="header-brand1" to={`${import.meta.env.BASE_URL}master/blog`}>
+              {/* <img src={Imagesdata("msl_top_logo")} className="header-brand-img desktop-logo" alt="logo1" />
               <img src={Imagesdata("msl_top_logo")} className="header-brand-img toggle-logo" alt="logo-2" />
               <img src={Imagesdata("msl_top_logo")} className="header-brand-img light-logo" alt="logo-3" />
-              <img src={Imagesdata("msl_top_logo")} className="header-brand-img light-logo1" alt="logo-4" style={{width: '200px'}}/>
+              <img src={Imagesdata("msl_top_logo")} className="header-brand-img light-logo1" alt="logo-4" style={{width: '200px'}}/> */}
+              <img src={Imagesdata("one_cr_logo")} className="header-brand-img light-logo1" alt="logo-4" style={{width: '200px'}}/>
             </Link>
           </div>
           <div className="main-sidemenu mb-8 d-flex flex-column justify-content-between h-100 ">
